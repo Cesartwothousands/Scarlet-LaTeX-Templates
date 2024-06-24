@@ -1,0 +1,45 @@
+\ProvidesPackage{mystyle}
+
+% pdf things
+\usepackage{booktabs, comment}
+\usepackage[absolute, overlay]{textpos}
+\usepackage{pgfpages}
+\usepackage[font=footnotesize]{caption}
+\usepackage{tikz}
+\usepackage[makeroom]{cancel}
+\usepackage{textpos}
+\usepackage{csquotes}
+
+\usepackage[absolute,overlay]{textpos}  % import package
+
+% Math packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{bm}
+
+% Theme things (Rutgers University)
+\definecolor{MainRed}{RGB}{204, 0, 51} % New main color
+\definecolor{LightRed}{RGB}{247, 204, 207} % Light version of main color
+\definecolor{ComplementaryBlue}{RGB}{0, 51, 204} % Complementary color
+
+% Theme settings
+\setbeamercolor{title in head/foot}{bg=LightRed, fg=white}
+\setbeamercolor{author in head/foot}{bg=MainRed}
+\usetheme{Madrid}
+\useoutertheme{infolines}
+\usecolortheme[named=MainRed]{structure}
+\usepackage{hyperref}	% Hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=MainRed,
+    citecolor=ComplementaryBlue,
+    urlcolor=MainRed,
+}
+\setbeamercolor{example text}{fg=ComplementaryBlue}
+\addtobeamertemplate{footline}{\hypersetup{linkcolor=white}}
+
+% Own commands
+\newcommand{\xdot}{\dot{x}}
+
+

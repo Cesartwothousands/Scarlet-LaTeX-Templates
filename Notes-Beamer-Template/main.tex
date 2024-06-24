@@ -1,0 +1,148 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{mystyle} % See mystyle.sty for packages and own commands
+
+%------------------------------------------------------------
+%Title page
+\title[]{Projective Measurement Operation}
+\subtitle{(Meeting Note of June 7, 2024)}
+\titlegraphic{\includegraphics[height=1.5cm]{Logos/RUTGERS_H_RED_BLACK_RGB.png}}
+\author[Your Name]{\Large Your Name}
+\institute[]{\large Department of Computer Science \\Rutgers University}
+\date{\today}
+
+%---------------------TITLE PAGE---------------------------------------
+
+\begin{document}
+\begin{frame}
+    \maketitle
+\end{frame}
+%------------------------------------------------------------
+
+% \logo{\includegraphics[height=1.25cm]{Logos/RUTGERS_V_RED_BLACK_RGB.png}~%
+% }
+
+% Customize the frametitle template to include a logo and adjust the height
+\setbeamertemplate{frametitle}
+{
+    \nointerlineskip
+    \begin{beamercolorbox}[wd=\paperwidth,ht=3.5ex,dp=2ex]{frametitle} % Adjusted height and depth
+        \hspace*{1ex} % Space from left edge of the frame
+        \insertframetitle % Frame title text
+        \hfill % Push the logo to the right
+        \raisebox{-1.5ex}{\includegraphics[height=1cm]{Logos/RUTGERS_V_WHITE.png}} % Adjusted logo vertical position
+        \hspace*{1ex} % Space from right edge of the frame
+    \end{beamercolorbox}
+}
+
+%-------------------------------------------------------------------
+\section{Introduction}
+
+%-------------------------------------------------------------------
+
+\begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents
+\end{frame}
+
+%-------------------------------------------------------------------
+
+%---------------------SLIDE---------------------------------------
+\begin{frame}{Equations of motion}
+
+    \begin{columns}
+        \column{0.4\textwidth}
+        \begin{block}{Newton's second law}
+            $m\ddot{x} = F(\dot{x}, x, t)$
+        \end{block}
+        \begin{block}{Schrödinger's equation}
+            ${\displaystyle i\hbar {\frac {d}{dt}}\vert \Psi (t)\rangle ={\hat {H}}\vert \Psi (t)\rangle }$
+        \end{block}
+        \begin{block}{Ampère's circuital law}
+            $ \nabla \times \mathbf{B}=\frac{1}{c}\left(4 \pi \mathbf{J}+\frac{\partial \mathbf{E}}{\partial t}\right)$
+        \end{block}
+    \end{columns}
+
+
+\end{frame}
+%---------------------SLIDE---------------------------------------
+\begin{frame}{Important question}
+    Important question again
+\end{frame}
+%---------------------SLIDE---------------------------------------
+\section{Important section}
+\begin{frame}{Bullet points}
+    \begin{itemize}
+        \item Item A
+        \item Item B
+        \item Item C
+    \end{itemize}
+\end{frame}
+%---------------------SLIDE---------------------------------------
+\begin{frame}{Using pause}
+    This is a sentence. \pause
+    And this too. \pause
+    \alert{Bye}.
+\end{frame}
+
+%---------------------SLIDE--------------------------------------
+\begin{frame}{A Theorem}
+    \begin{theorem}[Freshman's Dream]
+        $(a+b)^p \equiv a^p + b^p \, (mod \,p)$ if p is a prime number.
+    \end{theorem} \pause
+    \begin{proof}
+        A valid proof.
+    \end{proof}
+    \begin{example}
+        Maybe an example?
+    \end{example}
+\end{frame}
+
+
+%-----------------------------SLIDE --------------------------------------
+
+\begin{frame}{How do you write a thesis?}
+
+    \begin{enumerate}
+        \item Eat
+        \item Sleep
+        \item Rave
+        \item Repeat
+    \end{enumerate}
+
+    \begin{itemize}
+        \item Eat
+        \item Sleep
+        \item Rave
+        \item Repeat
+    \end{itemize}
+
+    \begin{description}
+        \item[First] Eat
+        \item[Second] Sleep
+        \item[Third] Rave
+        \item[Fourth] Repeat
+    \end{description}
+\end{frame}
+
+
+%-----------------------------SLIDE --------------------------------------
+
+
+%-----------------------------SLIDE --------------------------------------
+\begin{frame}{The end.}
+    \begin{columns}
+        \column{0.4\textwidth}
+        This is a column.
+
+        \column{0.4\textwidth}
+        \includegraphics[width=0.9\textwidth]{Figures/meme.png}
+    \end{columns}
+
+
+\end{frame}
+
+
+
+
+\end{document}
